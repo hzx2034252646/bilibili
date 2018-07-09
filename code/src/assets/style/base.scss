@@ -1,0 +1,24 @@
+body, div, ul, li, p{
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  font-size: .28rem;
+  font-family: 'Microsoft Yahei', sans-serif;
+  overflow: hidden;
+  height: 100%;
+  background: #fff;
+}
+
+[v-cloak]{
+  display: none !important;
+}
