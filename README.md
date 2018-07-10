@@ -1,6 +1,6 @@
 # bilibili
 
-> A Vue.js project
+> 这是一个基于Vue2实现的仿bilibili移动端webapp
 
 ## Build Setup
 
