@@ -79,14 +79,13 @@ export default {
         flex: 1;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         padding-left: .2rem;
         color: #333;
         .title{
+          line-height: 1.4em;
+          height: 2.7em;
           overflow : hidden;
-          text-overflow: ellipsis;
-          display: -webkit-box;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical;
         }
         .text{
           font-size: .8em;

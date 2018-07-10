@@ -58,7 +58,7 @@ export default {
           }
         }
         .wrapper{
-          flex: 1;
+          width: 5.8rem;
           position: relative;
           color: #aaa;
           .user{
@@ -73,6 +73,7 @@ export default {
             color: #333;
             margin-top: .2rem;
             padding-right: .2rem;
+            word-wrap: break-word;
           }
         }
       }

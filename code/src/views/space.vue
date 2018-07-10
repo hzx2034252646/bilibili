@@ -14,7 +14,7 @@
     </div>
     <div class="list" v-else>
       <div v-for="(value,index) in data" :key="index">
-        <p v-if="value.list.length>0">{{ value.order }}</p>
+        <p v-if="value.list.length>0" v-cloak>{{ value.order }}</p>
         <div class="list-item" v-for="(item,index) in value.list" :key="index" @click="play(item.aid)">
           <div class="cover">
             <img :src="item.pic" alt="">
@@ -45,7 +45,7 @@ export default {
   computed: {
     ...mapState(['play_history'])
   },
-  created () {
+  mounted () {
     this.SET_PLAY_HISTORY(JSON.parse(localStorage.getItem('play_history')) || [])
   },
   activated () {
@@ -156,11 +156,9 @@ export default {
           color: #333;
           position: relative;
           .title{
+            line-height: 1.4em;
+            height: 2.7em;
             overflow : hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
           }
           .date{
             color: #999;

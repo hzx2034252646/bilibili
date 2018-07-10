@@ -20,7 +20,7 @@ export default {
   computed: {
     ...mapState(['search'])
   },
-  created () {
+  mounted () {
     this.$http.get('/', {
       params: {
         get: 'search',

@@ -27,7 +27,7 @@ export default {
   computed: {
     ...mapState(['video', 'comment'])
   },
-  created () {
+  mounted () {
     this.loadData()
   },
   methods: {

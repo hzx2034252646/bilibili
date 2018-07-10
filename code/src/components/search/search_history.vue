@@ -23,7 +23,7 @@ export default {
       this.SET_SEARCH_HISTORY([])
     }
   },
-  created () {
+  mounted () {
     this.SET_SEARCH_HISTORY(JSON.parse(localStorage.getItem('search')) || [])
   }
 }

@@ -22,7 +22,7 @@ export default {
       data: []
     }
   },
-  created () {
+  mounted () {
     this.SET_TID(0)
     this.$http.get('/', {
       params: {

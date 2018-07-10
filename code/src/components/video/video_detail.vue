@@ -30,7 +30,7 @@
         </span>
       </div>
     </div>
-    <div class="part-list-wrapper" v-if="video.videos>1">
+    <div class="part-list-wrapper" v-if="video.videos>1" v-cloak>
       <div class="part-list" ref="part-list">
         <div :class="['part-list-item', {'part-active': item.page == part }]"
         v-for="(item,index) in video.pages" :key="index" @click="play(item.page)">
@@ -41,7 +41,7 @@
         <span class="arrow"></span>
       </div>
     </div>
-    <div class="part-popup-wrapper" v-if="video.videos>1" v-show="popupVisible" @click.self="popupVisible=false">
+    <div class="part-popup-wrapper" v-if="video.videos>1" v-show="popupVisible" @click.self="popupVisible=false" v-cloak>
       <div class="part-popup">
         <div class="top">
           <span>分集 ({{ video.videos }})</span>
