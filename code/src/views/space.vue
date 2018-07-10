@@ -156,9 +156,11 @@ export default {
           color: #333;
           position: relative;
           .title{
-            line-height: 1.4em;
-            height: 2.7em;
-            overflow : hidden;
+            line-height: 1.5em;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
           }
           .date{
             color: #999;

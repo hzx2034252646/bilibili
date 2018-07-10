@@ -222,8 +222,7 @@ export default {
         align-items: center;
         p{
           line-height: 1.5em;
-          overflow : hidden;
-          text-overflow: ellipsis;
+          overflow: hidden;
           display: -webkit-box;
           -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;
