@@ -37,15 +37,15 @@
           <p>{{ item.part }}</p>
         </div>
       </div>
-      <div class="icon" @click="popupVisible=true">
+      <div class="icon" @click="showPopup">
         <span class="arrow"></span>
       </div>
     </div>
-    <div class="part-popup-wrapper" v-if="video.videos>1" v-show="popupVisible" @click.self="popupVisible=false">
+    <div class="part-popup-wrapper" v-if="video.videos>1" v-show="popupVisible" @click.self="hidePopup">
       <div class="part-popup">
         <div class="top">
           <span>分集 ({{ video.videos }})</span>
-          <span class="close-icon" @click="popupVisible=false"></span>
+          <span class="close-icon" @click="hidePopup"></span>
         </div>
         <div class="container">
           <div class="part-list">
@@ -94,10 +94,20 @@ export default {
     play (page) {
       this.SET_PART(page)
       if (this.popupVisible) {
-        this.popupVisible = false
+        this.hidePopup()
         let elem = this.$refs['part-list'].getElementsByClassName('part-list-item')
         this.$refs['part-list'].scrollLeft = elem[page - 1].offsetLeft - elem[0].offsetLeft
       }
+    },
+    showPopup () {
+      this.popupVisible = true
+      let elem = document.getElementsByClassName('page')[0]
+      elem.scrollTop = 0
+      elem.style.overflow = 'hidden'
+    },
+    hidePopup () {
+      this.popupVisible = false
+      document.getElementsByClassName('page')[0].style.overflow = 'auto'
     }
   }
 }
