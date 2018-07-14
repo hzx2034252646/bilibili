@@ -1,5 +1,5 @@
 <template>
-  <div class="search-hot" v-if="search.visible" v-cloak>
+  <div class="search-hot" v-if="search.visible">
     <p>大家都在搜</p>
     <div class="search-hot-list">
       <span class="search-hot-item" v-for="(item,index) in data" :key="index" @click="SEARCH(item.keyword)">

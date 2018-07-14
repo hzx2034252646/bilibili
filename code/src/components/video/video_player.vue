@@ -1,6 +1,6 @@
 <template>
   <div class="player">
-    <div class="player-cover" v-if="visible" v-cloak>
+    <div class="player-cover" v-if="visible">
       <img :src="video.pic | pic_filter" alt="">
       <div class="player-top" v-show="video.aid">
         av{{ video.aid }}

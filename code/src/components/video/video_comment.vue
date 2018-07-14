@@ -1,5 +1,5 @@
 <template>
-  <div class="comment" v-if="data.replies" v-cloak>
+  <div class="comment" v-if="data.replies">
     <div class="top">
       <span>评论（{{ data.page.count }}）</span>
     </div>

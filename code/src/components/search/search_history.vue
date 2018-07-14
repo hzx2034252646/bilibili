@@ -1,5 +1,5 @@
 <template>
-  <div class="search-history" v-if="search.visible" v-show="search.history.length>0" v-cloak>
+  <div class="search-history" v-if="search.visible" v-show="search.history.length>0">
     <p>历史搜索</p>
     <div class="search-history-item" v-for="(item,index) in search.history" :key="index" @click="SEARCH(item)">
       <span class="clock-icon"></span>

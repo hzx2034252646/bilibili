@@ -8,13 +8,13 @@
         <span class="clearHistory" @click="clearHistory">全部清空</span>
       </p>
     </div>
-    <div class="noContent" v-if="play_history.length==0" v-cloak>
+    <div class="noContent" v-if="play_history.length==0">
       <img src="@/assets/img/noContent.png" alt="">
       <p>暂无历史记录</p>
     </div>
     <div class="list" v-else>
       <div v-for="(value,index) in data" :key="index">
-        <p v-if="value.list.length>0" v-cloak>{{ value.order }}</p>
+        <p v-if="value.list.length>0">{{ value.order }}</p>
         <div class="list-item" v-for="(item,index) in value.list" :key="index" @click="play(item.aid)">
           <div class="cover">
             <img :src="item.pic" alt="">

@@ -49,13 +49,12 @@ export default {
   .page{
     overflow: auto;
     height: 100%;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
   }
   .slide-right{
     &-enter{
       transform: translate3d(-20%, 0, 0);
-    }
-    &-enter-to{
-      transform: translate3d(0, 0, 0);
     }
     &-leave-to{
       transform: translate3d(100%, 0, 0);

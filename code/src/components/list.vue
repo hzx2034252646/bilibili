@@ -45,6 +45,7 @@ export default {
         }
       }
       .list-text{
+        color: #333;
         margin-top: .1rem;
         overflow: hidden;
         display: -webkit-box;
