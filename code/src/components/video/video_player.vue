@@ -8,7 +8,10 @@
       <div class="time">{{ video.duration | time_filter }}</div>
       <div class="play-icon" @click="play"></div>
     </div>
-    <embed :src="videoUrl" allowfullscreen="true" type="video/mp4" width="100%" height="100%" v-else />
+    <object :data="videoUrl" width="100%" height="100%" v-else >
+      <embed :src="videoUrl" allowfullscreen="true" type="video/mp4"
+      style="display:inline" width="100%" height="100%" />
+    </object>
   </div>
 </template>
 

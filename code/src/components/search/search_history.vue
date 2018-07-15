@@ -33,6 +33,7 @@ export default {
   .search-history{
     margin-top: .5rem;
     padding-left: .3rem;
+    padding-right: .3rem;
     p{
       color: #aaa;
       margin-bottom: .4rem;
@@ -40,7 +41,7 @@ export default {
     .search-history-item{
       margin-bottom: .2rem;
       padding-bottom: .2rem;
-      border-bottom: .02rem solid #eee;
+      border-bottom: 1px solid #eee;
       .clock-icon{
         width: .3rem;
         height: .3rem;

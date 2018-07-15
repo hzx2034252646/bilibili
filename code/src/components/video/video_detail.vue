@@ -155,8 +155,13 @@ export default {
         margin-right: .1rem;
         vertical-align: middle;
         &:nth-child(1){
+          display: inline-block;
           color: #333;
           margin: 0 .2rem;
+          overflow: hidden;
+          max-width: 2.5rem;
+          text-overflow: ellipsis;
+          white-space: nowrap;
         }
       }
     }
@@ -222,7 +227,7 @@ export default {
       .part-list-item{
         width: 2.3rem;
         height: 1rem;
-        border: .02rem solid #ccc;
+        border: 1px solid #ccc;
         font-size: .9em;
         color: #333;
         padding: 0 .2rem;
@@ -238,7 +243,7 @@ export default {
           -webkit-box-orient: vertical;
         }
         &.part-active{
-          border: .02rem solid #fb7299;
+          border: 1px solid #fb7299;
           color: #fb7299;
         }
       }

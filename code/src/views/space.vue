@@ -110,7 +110,7 @@ export default {
       p{
         color: #fb7299;
         padding: .2rem .3rem;
-        border-bottom: .02rem solid #eee;
+        border-bottom: 1px solid #eee;
         .clearHistory{
           float: right;
         }

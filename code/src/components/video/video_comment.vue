@@ -45,7 +45,7 @@ export default {
         display: flex;
         margin-bottom: .2rem;
         padding-bottom: .2rem;
-        border-bottom: .02rem solid #eee;
+        border-bottom: 1px solid #eee;
         .avatar{
           width: .9rem;
           height: .9rem;

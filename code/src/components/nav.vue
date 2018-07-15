@@ -143,7 +143,7 @@ export default {
   }
   .nav-active{
     span{
-      border-bottom: .03rem solid #fb7299;
+      border-bottom: 2px solid #fb7299;
       color: #fb7299 !important;
     }
   }
