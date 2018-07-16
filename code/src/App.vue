@@ -49,8 +49,6 @@ export default {
   .page{
     overflow: auto;
     height: 100%;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
   }
   .slide-right{
     &-enter{
