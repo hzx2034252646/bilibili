@@ -23,7 +23,8 @@ const webpackConfig = merge(baseWebpackConfig, {
       usePostCSS: true
     })
   },
-  devtool: config.build.productionSourceMap ? config.build.devtool : false,
+  // devtool: config.build.productionSourceMap ? config.build.devtool : false,
+  devtool: false,
   output: {
     path: config.build.assetsRoot,
     filename: utils.assetsPath('js/[name].[chunkhash].js'),
